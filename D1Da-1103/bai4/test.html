@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Info Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 600px;
+            border: 1px solid black;
+            padding: 10px;
+            position: absolute;
+            height: 96%;
+            width: 96%;
+            background-color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+        .title {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .label {
+            width: 160px;
+            font-weight: bold;
+        }
+        .input {
+            flex: 1;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 4px;
+            box-sizing: border-box;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .radio {
+            display: flex;
+            align-items: center;
+        }
+        form {
+            position: absolute;
+            background-color: rgb(213, 209, 212);
+            height: 1000px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form >
+    <div class="container">
+        <div class="title">Basic Info</div>
+
+        <div class="row">
+            <div class="label">Employee ID</div>
+            <div class="input">9</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Last Name</div>
+            <div class="input">Dodsworth</div>
+        </div>
+
+        <div class="row">
+            <div class="label">First Name</div>
+            <div class="input">
+                <input type="text" value="Anne">
+            </div>
+        </div>
+        <div class="radio">
+            <span class="label">Gender</span>
+            <div class="options">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="xxx"> XXX</label>
+                <label><input type="radio" name="gender" value="zzz" checked> ZZZ</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Title</div>
+            <div class="input">
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Suffix</div>
+            <div class="input">
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Birth Date</div>
+            <div class="input">
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Hire Date</div>
+            <div class="input">
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">SNS # (if applicable)</div>
+            <div class="input">
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Reports to</div>
+            <div class="input">
+                <select class="input">
+                    <option value="">Buchanan</option>
+                </select>
+            </div>
+        </div>
+        <h1><b>Contact Info</b></h1>
+    </div>
+    </form>
+</body>
+</html>

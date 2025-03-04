@@ -1,0 +1,29 @@
+fo
+.container {
+    position: absolute;
+    background-color: rgb(213, 209, 212);
+    height: 1000px;
+    width: 100%;
+}
+form{
+    position: absolute;
+    height: 96%;
+    width: 96%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+label{
+    margin-left: 30px;
+    display: block;
+    width: 15%;
+    float: left;
+    margin-top: 10px;
+}
+input{
+    display: flex;
+    width: 70%;
+    margin-right: 20px;
+    left: 0;
+}
