@@ -1,6 +1,16 @@
 html{
     box-sizing: border-box;
     height: 1000px;
+
+}
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    /* border: 3px solid black; */
+    padding: 10px 10px;
+
 }
 .container {
     background-color: #fff;
@@ -9,12 +19,6 @@ html{
     justify-content: space-between;
     width: 1300px;
 
-}
-body{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
 }
 .item{
     width: 400px;
