@@ -1,0 +1,67 @@
+html{
+    box-sizing: border-box;
+    height: 1000px;
+
+}
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    /* border: 3px solid black; */
+    padding: 10px 10px;
+
+}
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1300px;
+
+}
+.item{
+    width: 400px;
+    margin-top: 10px;
+}
+
+.banner {
+    max-width: 400px;
+    max-height: 200px;
+}
+
+.name{
+    max-width: 400px;
+    margin: 0;
+}
+
+p{
+    width: 400px;
+}
+
+img {
+    width: 400px;
+    height: 150px;
+}
+
+.dat {
+    margin-top: 10px;
+}
+
+.ti-gift, .ti-time, .ti-arrow-right {
+    color: rgb(134, 12, 12);
+}
+
+.first-line {
+    font-size: 25px;
+    display: flex;
+    color: rgb(134, 12, 12);
+}
+
+.headline {
+    width: 5px;
+    height: 30px;
+    background-color: rgb(134, 12, 12);
+    margin-right: 10px;
+}
+
