@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL GOALS - Joe's Travel Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        
+        .page-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 5px solid #ff69b4;
+            border-image: linear-gradient(90deg, #ff69b4, #4a86e8) 1;
+            background-color: #fff;
+        }
+        
+        header {
+            background-color: #44c8c0;
+            background-image: linear-gradient(rgba(68, 200, 192, 0.8), rgba(68, 200, 192, 0.8)), url(https://media-cdn-v2.laodong.vn/storage/newsportal/2022/7/13/1067753/Cac-Tour-Dulich-Tron.jpg?w=800&crop=auto&scale=both);
+            padding: 20px 0;
+            position: relative;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-links {
+            display: flex;
+        }
+        
+        .nav-link {
+            background-color: #d5e8b2;
+            color: #333;
+            padding: 5px 15px;
+            margin-left: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+            position: relative;
+        }
+        
+        .hero-content {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 5px;
+            max-width: 400px;
+            z-index: 2;
+        }
+        
+        .hero-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .hero-subtitle {
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .cta-button {
+            background-color: #ffdf00;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .highlights-section {
+            background-color: #d9f2f2;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .section-title {
+            color: #444;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        
+        .highlights-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        .highlight-card {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .highlight-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .highlight-location {
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .city {
+            font-weight: bold;
+        }
+        
+        .country {
+            color: #44c8c0;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .social-icon {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .highlights-grid {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+        
+        /* Surfboard overlay in hero section */
+        .surfboard {
+            position: absolute;
+            width: 200px;
+            height: 500px;
+            background-color: white;
+            border-radius: 50% 50% 0 0;
+            transform: rotate(45deg);
+            right: 20%;
+            bottom: -250px;
+            z-index: 1;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .surfboard::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            top: 20%;
+            left: 20%;
+            border: 2px solid #444;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="header-top">
+                <div class="logo">TRAVEL GOALS</div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Destinations</a>
+                    <a href="#" class="nav-link">About</a>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">JOE'S TRAVEL PAGE</h1>
+                    <p class="hero-subtitle">LET'S EXPLORE THE WORLD TOGETHER!</p>
+                    <a href="#" class="cta-button">Discover places</a>
+                </div>
+            </div>
+        </header>
+        
+        <section class="highlights-section">
+            <h2 class="section-title">HIGHLIGHTS</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <img src="/api/placeholder/400/150" alt="Miami" class="highlight-img">
+                    <div class="highlight-location">
+                        <span class="city">MIAMI</span> <span class="country">USA</span>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img src="/api/placeholder/400/150" alt="Munich" class="highlight-img">
+                    <div class="highlight-location">
+                        <span class="city">MUNICH</span> <span class="country">GERMANY</span>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img src="/api/placeholder/400/150" alt="Barcelona" class="highlight-img">
+                    <div class="highlight-location">
+                        <span class="city">BARCELONA</span> <span class="country">SPAIN</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="social-links">
+                <a href="#" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
