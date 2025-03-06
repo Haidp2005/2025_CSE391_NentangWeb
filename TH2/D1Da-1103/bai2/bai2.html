@@ -18,18 +18,17 @@
         }
         
         .page-wrapper {
-            max-width: 1200px;
             margin: 0 auto;
-            border: 5px solid #ff69b4;
             border-image: linear-gradient(90deg, #ff69b4, #4a86e8) 1;
             background-color: #fff;
+            width: 100%;
         }
         
         header {
-            background-color: #44c8c0;
-            background-image: linear-gradient(rgba(68, 200, 192, 0.8), rgba(68, 200, 192, 0.8)), url(https://media-cdn-v2.laodong.vn/storage/newsportal/2022/7/13/1067753/Cac-Tour-Dulich-Tron.jpg?w=800&crop=auto&scale=both);
+            background-image:  url(https://media-cdn-v2.laodong.vn/storage/newsportal/2022/7/13/1067753/Cac-Tour-Dulich-Tron.jpg?w=800&crop=auto&scale=both) ;
             padding: 20px 0;
             position: relative;
+            background-size: 100% 100%; 
         }
         
         .header-top {
@@ -40,10 +39,11 @@
         }
         
         .logo {
-            color: white;
+            color: yellow;
             font-size: 28px;
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
         }
         
         .nav-links {
@@ -51,12 +51,11 @@
         }
         
         .nav-link {
-            background-color: #d5e8b2;
-            color: #333;
+            background-color: none;
+            color: yellow;
             padding: 5px 15px;
             margin-left: 10px;
             text-decoration: none;
-            border-radius: 5px;
             font-size: 14px;
         }
         
@@ -79,12 +78,12 @@
         }
         
         .hero-title {
-            font-size: 32px;
+            font-size: 30px;
             margin-bottom: 10px;
         }
         
         .hero-subtitle {
-            font-size: 16px;
+            font-size: 15px;
             margin-bottom: 20px;
             font-weight: 300;
         }
@@ -94,7 +93,7 @@
             color: #333;
             padding: 10px 20px;
             border: none;
-            border-radius: 25px;
+            border-radius: 5px;
             font-weight: bold;
             cursor: pointer;
             text-decoration: none;
@@ -208,7 +207,7 @@
     <div class="page-wrapper">
         <header>
             <div class="header-top">
-                <div class="logo">TRAVEL GOALS</div>
+                <div class="logo"><a href="bai2.html" class="logo">TRAVEL GOALS</a></div>
                 <div class="nav-links">
                     <a href="#" class="nav-link">Destinations</a>
                     <a href="#" class="nav-link">About</a>
@@ -227,19 +226,19 @@
             <h2 class="section-title">HIGHLIGHTS</h2>
             <div class="highlights-grid">
                 <div class="highlight-card">
-                    <img src="/api/placeholder/400/150" alt="Miami" class="highlight-img">
+                    <img src="https://media.istockphoto.com/id/802893644/vi/anh/nh%C3%ACn-t%E1%BB%AB-tr%C3%AAn-kh%C3%B4ng-c%E1%BB%A7a-trung-t%C3%A2m-miami-florida.jpg?s=612x612&w=0&k=20&c=zfu_k1CNJLDmuE0jz1skGeKe172zvUjhRTtfWl67atI=" alt="Miami" class="highlight-img">
                     <div class="highlight-location">
                         <span class="city">MIAMI</span> <span class="country">USA</span>
                     </div>
                 </div>
                 <div class="highlight-card">
-                    <img src="/api/placeholder/400/150" alt="Munich" class="highlight-img">
+                    <img src="https://media.istockphoto.com/id/184102635/vi/anh/munich.jpg?s=612x612&w=is&k=20&c=wMUL-vTNze84pr5pUZgLm0S521_z-jBeKB_mDpuirXY=" alt="Munich" class="highlight-img">
                     <div class="highlight-location">
                         <span class="city">MUNICH</span> <span class="country">GERMANY</span>
                     </div>
                 </div>
                 <div class="highlight-card">
-                    <img src="/api/placeholder/400/150" alt="Barcelona" class="highlight-img">
+                    <img src="https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/cataluna/park-guell-barcelona-s-305364611.jpg" alt="Barcelona" class="highlight-img">
                     <div class="highlight-location">
                         <span class="city">BARCELONA</span> <span class="country">SPAIN</span>
                     </div>
